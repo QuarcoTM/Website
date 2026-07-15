@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nesti — едно спокойно място за всичко важно около твоето дете. Хранене, сън, пелени, температура, лекарства, растеж и още." />
+  <meta name="theme-color" content="#16A34A" />
+  <title>Nesti — Всичко важно за твоето дете</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand" aria-label="Nesti Начало">
+        <div class="brand-mark">🐧</div>
+        <span>Nesti</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Отвори меню" aria-expanded="false">☰</button>
+
+      <nav class="nav" aria-label="Основна навигация">
+        <a href="#home" class="active">Начало</a>
+        <a href="#features">Функции</a>
+        <a href="#ask">Попитай Nesti</a>
+        <a href="#doctor">За лекар</a>
+        <a href="#security">Сигурност</a>
+        <a href="#pricing">Планове</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav-badges">
+        <a href="#download" class="store-badge"> App Store</a>
+        <a href="#download" class="store-badge">▶ Google Play</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Твоят помощник в грижата за детето</span>
+          <h1>Всичко важно.<br><span>На едно място.</span></h1>
+          <p class="lead">
+            Хранене, сън, пелени, температура, лекарства, растеж и важни моменти —
+            организирани спокойно, ясно и достъпно.
+          </p>
+          <div class="cta-row">
+            <a href="#download" class="btn btn-primary"> Изтегли за iPhone</a>
+            <a href="#download" class="btn btn-secondary">▶ За Android</a>
+          </div>
+          <div class="trust-row">
+            <div class="avatars">
+              <span>👩</span><span>👨</span><span>👩</span><span>👨</span>
+            </div>
+            <p><strong>Създадено с любов</strong><br>за спокойствието на всяко семейство.</p>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img src="assets/hero-visual.jpg" alt="Nesti приложение с бебе и зеленото Nesti талисманче" />
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-features" id="features">
+      <div class="container feature-strip">
+        <article><div class="icon">🍼</div><h3>Хранене</h3><p>Лесно проследяване</p></article>
+        <article><div class="icon">🌙</div><h3>Сън</h3><p>Ясна рутина</p></article>
+        <article><div class="icon">🩲</div><h3>Пелени</h3><p>Всичко под контрол</p></article>
+        <article><div class="icon">🌡️</div><h3>Температура</h3><p>Винаги под око</p></article>
+        <article><div class="icon">💊</div><h3>Лекарства</h3><p>Без пропуски</p></article>
+        <article><div class="icon">📊</div><h3>Статистика</h3><p>Ясни графики</p></article>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div class="container split-grid">
+        <div class="image-card app-card">
+          <img src="assets/app-preview.jpg" alt="Преглед на екраните за сън и хранене в Nesti" />
+        </div>
+        <div class="section-copy">
+          <span class="eyebrow">Един дневник. Цялата картина.</span>
+          <h2>По-малко чудене.<br>Повече яснота.</h2>
+          <ul class="check-list">
+            <li>Записвай лесно и бързо</li>
+            <li>Виж история и тенденции</li>
+            <li>Ползвай базови напомняния</li>
+            <li>Работи offline-first</li>
+            <li>Следи важните здравни записи</li>
+            <li>Запази най-важните моменти</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ask-section" id="ask">
+      <div class="container ask-grid">
+        <div class="section-copy">
+          <span class="eyebrow">Nesti Premium</span>
+          <h2>Попитай Nesti</h2>
+          <p>
+            Не търси ръчно из десетки записи. Задай въпрос и Nesti ще ти помогне
+            да намериш информацията по-бързо.
+          </p>
+          <div class="question-chips">
+            <span>„Кога последно яде?“</span>
+            <span>„Колко спа днес?“</span>
+            <span>„Кога беше последната температура?“</span>
+          </div>
+          <p class="note">
+            Nesti показва ясно кога отговорът идва от твоите записи и кога от базата знания.
+          </p>
+        </div>
+
+        <div class="assistant-card">
+          <div class="assistant-head">
+            <div class="mini-penguin">🐧</div>
+            <div><strong>Попитай Nesti</strong><span>Тук съм, за да помогна.</span></div>
+          </div>
+          <div class="chat-bubble user">Колко спа днес?</div>
+          <div class="chat-bubble nesti">
+            Според записите в Nesti, днес са записани 3 ч. 40 мин. сън до момента.
+          </div>
+          <div class="source-label">Източник: твоите записи в Nesti</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section doctor-section" id="doctor">
+      <div class="container doctor-grid">
+        <div class="doctor-card">
+          <div class="doc-page">
+            <div class="doc-logo">🐧 Nesti</div>
+            <h4>Doctor Report</h4>
+            <div class="doc-line wide"></div>
+            <div class="doc-line"></div>
+            <div class="doc-chart">
+              <i style="height:45%"></i><i style="height:70%"></i><i style="height:55%"></i><i style="height:85%"></i><i style="height:65%"></i>
+            </div>
+            <div class="doc-line wide"></div>
+            <div class="doc-line"></div>
+          </div>
+        </div>
+        <div class="section-copy">
+          <span class="eyebrow">Nesti Premium</span>
+          <h2>Подготви се за преглед</h2>
+          <p>
+            Избери период и създай структуриран PDF отчет с информацията,
+            която искаш да споделиш с лекар.
+          </p>
+          <ul class="check-list">
+            <li>Хранене и сън</li>
+            <li>Температура и лекарства</li>
+            <li>Симптоми и здравен дневник</li>
+            <li>Растеж и важни наблюдения</li>
+            <li>Ясно отделено AI обобщение</li>
+          </ul>
+          <div class="premium-pill">Doctor Report / PDF е Premium-only</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section security-section" id="security">
+      <div class="container">
+        <div class="center-heading">
+          <span class="eyebrow">Сигурност и поверителност</span>
+          <h2>Твоите данни. Твоят контрол.</h2>
+          <p>Privacy-first подходът е част от основата на Nesti.</p>
+        </div>
+
+        <div class="security-grid">
+          <article><div class="icon">🔒</div><h3>Контролиран достъп</h3><p>Ти определяш кой има достъп до семейните данни.</p></article>
+          <article><div class="icon">☁️</div><h3>Cloud по избор</h3><p>Cloud Backup & Sync са част от Plus и Premium.</p></article>
+          <article><div class="icon">🛡️</div><h3>Без реклами</h3><p>Nesti няма реклами и не продава здравните ти данни.</p></article>
+          <article><div class="icon">💚</div><h3>Създадено за родители</h3><p>Ясно, спокойно и без излишно натоварване.</p></article>
+        </div>
+
+        <div class="security-mascot">
+          <img src="assets/security-penguin.jpg" alt="Nesti талисманче със сърце" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing-section" id="pricing">
+      <div class="container">
+        <div class="center-heading">
+          <span class="eyebrow">Планове</span>
+          <h2>Избери своето Nesti</h2>
+          <p>Free остава пълноценният основен дневник. Plus и Premium добавят повече сила.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <div class="plan-tag">Free</div>
+            <h3>0 €</h3>
+            <p>Основният дневник за едно дете.</p>
+            <ul>
+              <li>Core diary</li>
+              <li>Здравни записи</li>
+              <li>Knowledge Base</li>
+              <li>Базови напомняния</li>
+            </ul>
+            <a href="#download" class="btn btn-ghost">Започни безплатно</a>
+          </article>
+
+          <article class="price-card featured">
+            <div class="plan-tag">Plus</div>
+            <h3>3,99 € <small>/месец</small></h3>
+            <p>За семейство, cloud и по-добър анализ.</p>
+            <ul>
+              <li>Повече деца</li>
+              <li>Family Sharing</li>
+              <li>Cloud Backup & Sync</li>
+              <li>Advanced Analytics</li>
+              <li>Intelligent Calendar</li>
+            </ul>
+            <a href="#download" class="btn btn-secondary">Избери Plus</a>
+          </article>
+
+          <article class="price-card premium">
+            <div class="plan-tag">Premium</div>
+            <h3>6,99 € <small>/месец</small></h3>
+            <p>Пълното Nesti изживяване.</p>
+            <ul>
+              <li>Всичко от Plus</li>
+              <li>Попитай Nesti AI</li>
+              <li>Doctor Report / PDF</li>
+              <li>AI обобщение в отчета</li>
+            </ul>
+            <a href="#download" class="btn btn-primary">Избери Premium</a>
+          </article>
+        </div>
+        <p class="pricing-note">Текущите цени са тестов модел и могат да бъдат променени преди launch.</p>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-grid">
+        <div class="section-copy">
+          <span class="eyebrow">Често задавани въпроси</span>
+          <h2>Най-важното, накратко.</h2>
+        </div>
+        <div class="accordion">
+          <details>
+            <summary>Какво е Nesti?</summary>
+            <p>Nesti е приложение за организиране на важната информация около ежедневната грижа за дете.</p>
+          </details>
+          <details>
+            <summary>Nesti поставя ли диагнози?</summary>
+            <p>Не. Nesti не замества лекар и не поставя медицински диагнози.</p>
+          </details>
+          <details>
+            <summary>Работи ли без интернет?</summary>
+            <p>Основните записи са проектирани с offline-first подход. Някои cloud и AI функции могат да изискват интернет.</p>
+          </details>
+          <details>
+            <summary>Мога ли да извадя отчет за лекар?</summary>
+            <p>Да. Doctor Report / PDF Export е Premium функция.</p>
+          </details>
+          <details>
+            <summary>Има ли реклами?</summary>
+            <p>Не. Nesti няма реклами.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="download-section" id="download">
+      <div class="container download-wrap">
+        <div>
+          <span class="eyebrow">Очаквайте скоро</span>
+          <h2>Готови ли сте да опростите грижата за детето?</h2>
+          <p>Едно спокойно място за всичко важно около твоето дете.</p>
+        </div>
+        <div class="cta-row">
+          <a href="#" class="btn btn-dark"> App Store</a>
+          <a href="#" class="btn btn-dark">▶ Google Play</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand"><div class="brand-mark">🐧</div><span>Nesti</span></a>
+        <p>Едно спокойно място за всичко важно около твоето дете.</p>
+      </div>
+      <div><h4>Продукт</h4><a href="#features">Функции</a><a href="#ask">Попитай Nesti</a><a href="#doctor">Doctor Report</a><a href="#pricing">Планове</a></div>
+      <div><h4>Поддръжка</h4><a href="#faq">FAQ</a><a href="support.html">Support</a><a href="privacy.html">Поверителност</a><a href="terms.html">Условия</a></div>
+      <div><h4>Свържи се с нас</h4><a href="mailto:hello@nesti.app">hello@nesti.app</a><div class="social-row"><span>◉</span><span>◎</span><span>▶</span></div></div>
+    </div>
+    <div class="container footer-bottom">© 2026 Nesti. Всички права запазени.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
