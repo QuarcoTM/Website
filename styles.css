@@ -241,3 +241,35 @@ footer a{display:block;color:var(--muted);margin:6px 0;font-size:.9rem}
   .security-grid img{width:86px;height:86px}
   .footer-grid{grid-template-columns:1fr}
 }
+
+
+/* Nesti Website v3 — mobile refinements */
+@media (max-width: 768px) {
+  footer, footer .footer-grid, footer .footer-brand, footer .footer-col {
+    text-align: center !important;
+  }
+  footer .footer-grid {
+    justify-items: center !important;
+  }
+  footer ul {
+    padding-left: 0 !important;
+    list-style-position: inside;
+  }
+  footer .footer-brand, footer .footer-col {
+    width: 100%;
+  }
+  .family-avatars {
+    display: inline-flex;
+    gap: 4px;
+    font-size: 22px;
+    letter-spacing: 0;
+  }
+}
+
+/* Clean standalone icon presentation: no cropped labels from source artwork */
+.feature-icon img, .trust-icon img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
