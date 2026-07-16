@@ -1,14 +1,9 @@
 {
-  "version": "5.0",
-  "design": "green_white_nesti",
-  "assets_strategy": "separate_svg_assets_no_cropping",
-  "doctor_report": "premium_only",
-  "packing_scenarios": [
-    "beach",
-    "mountain",
-    "travel",
-    "camping"
-  ],
+  "version": "5-remake",
+  "locked_homepage_asset": "assets/references/locked-homepage.jpg",
+  "locked_doctor_report_asset": "assets/references/locked-doctor-report.jpg",
+  "fake_app_screens": false,
+  "packing_interactive": true,
   "responsive": [
     "mobile",
     "tablet",
