@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 760">
+<rect width="390" height="760" rx="42" fill="#fff"/><rect x="1" y="1" width="388" height="758" rx="41" fill="none" stroke="#dce8de" stroke-width="2"/>
+<text x="28" y="54" font-family="Arial" font-size="15" fill="#69766e">9:41</text><circle cx="336" cy="48" r="5" fill="#0e2617"/><circle cx="352" cy="48" r="5" fill="#0e2617"/>
+<text x="28" y="108" font-family="Arial" font-size="17" fill="#69766e">Здравей, родител!</text><text x="28" y="140" font-family="Arial" font-size="25" font-weight="700" fill="#0e2617">Георги · 5 месеца</text>
+<g font-family="Arial" font-size="16" font-weight="700" fill="#0e2617">
+<rect x="24" y="174" width="164" height="76" rx="20" fill="#f1faf2" stroke="#dce8de"/><text x="64" y="220">Развитие</text>
+<rect x="202" y="174" width="164" height="76" rx="20" fill="#f1faf2" stroke="#dce8de"/><text x="242" y="220">Хранене</text>
+<rect x="24" y="264" width="164" height="76" rx="20" fill="#f1faf2" stroke="#dce8de"/><text x="64" y="310">Сън</text>
+<rect x="202" y="264" width="164" height="76" rx="20" fill="#f1faf2" stroke="#dce8de"/><text x="242" y="310">Здраве</text>
+</g>
+<rect x="24" y="366" width="342" height="112" rx="22" fill="#eaf8ed"/><text x="44" y="404" font-family="Arial" font-size="18" font-weight="700" fill="#0e2617">Съвет за днес</text><text x="44" y="434" font-family="Arial" font-size="15" fill="#69766e">Следи тенденциите, не отделния запис.</text>
+<text x="24" y="530" font-family="Arial" font-size="16" font-weight="700" fill="#0e2617">Последни записи</text>
+<rect x="24" y="550" width="342" height="58" rx="16" fill="#fff" stroke="#dce8de"/><circle cx="52" cy="579" r="14" fill="#dcfce7"/><text x="78" y="576" font-family="Arial" font-size="14" font-weight="700" fill="#0e2617">Хранене · 180 ml</text><text x="78" y="596" font-family="Arial" font-size="12" fill="#69766e">преди 2 ч. 15 мин.</text>
+<circle cx="195" cy="676" r="30" fill="#169447"/><text x="195" y="687" text-anchor="middle" font-family="Arial" font-size="34" fill="white">+</text>
+<text x="26" y="726" font-family="Arial" font-size="12" fill="#69766e">Начало</text><text x="96" y="726" font-family="Arial" font-size="12" fill="#69766e">Дневник</text><text x="260" y="726" font-family="Arial" font-size="12" fill="#69766e">Статистика</text><text x="338" y="726" font-family="Arial" font-size="12" fill="#69766e">Още</text>
+</svg>
