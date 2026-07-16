@@ -1,0 +1,17 @@
+{
+  "version": "5.0",
+  "design": "green_white_nesti",
+  "assets_strategy": "separate_svg_assets_no_cropping",
+  "doctor_report": "premium_only",
+  "packing_scenarios": [
+    "beach",
+    "mountain",
+    "travel",
+    "camping"
+  ],
+  "responsive": [
+    "mobile",
+    "tablet",
+    "desktop"
+  ]
+}
