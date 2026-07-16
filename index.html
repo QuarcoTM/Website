@@ -1,263 +1,312 @@
 <!doctype html>
 <html lang="bg">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Nesti — помощник за родители: дневник, анализи, Багаж с Nesti и Premium отчет за лекар.">
-<title>Nesti — Твоят помощник в грижата за детето</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="Nesti — дневник за бебето, Багаж с Nesti и примерен отчет за лекар.">
+  <title>Nesti v6 — Спокойствие и яснота за всеки родителски момент</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="#home"><img class="brand-mascot" src="assets/illustrations/nesti-mascot.svg" alt="Nesti"><span>Nesti</span></a>
+    <a class="brand" href="#home" aria-label="Nesti начало">
+      <img class="brand-logo-img" src="assets/generated/nesti-logo-header.png" alt="Nesti">
+    </a>
+
     <nav class="desktop-nav">
       <a href="#features">Функции</a>
-      <a href="#app">Приложението</a>
       <a href="#packing">Багаж с Nesti</a>
       <a href="#doctor">Отчет за лекар</a>
-      <a href="#pricing">Планове</a>
+      <a href="#family">За родители</a>
+      <a href="#download">Изтегли</a>
     </nav>
-    <button class="menu-btn" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+
+    <div class="nav-actions">
+      <button class="menu-btn interactive" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+      <button class="header-cta primary-btn interactive store-link" data-store="download">Изтегли Nesti</button>
+    </div>
   </div>
+
   <nav class="mobile-nav">
-    <a href="#features">Функции</a><a href="#app">Приложението</a><a href="#packing">Багаж с Nesti</a><a href="#doctor">Отчет за лекар</a><a href="#pricing">Планове</a>
+    <a href="#features">Функции</a>
+    <a href="#packing">Багаж с Nesti</a>
+    <a href="#doctor">Отчет за лекар</a>
+    <a href="#family">За родители</a>
+    <a href="#download">Изтегли</a>
   </nav>
 </header>
 
 <main>
-<section class="hero" id="home">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <span class="eyebrow">Твоят помощник в грижата за детето</span>
-      <h1>Спокойствие в ежедневието.<br><strong>Яснота, когато ви потрябва.</strong></h1>
-      <p>Nesti събира хранене, сън, здраве, развитие, лекарства, бележки, семейна организация и подготовка за пътуване на едно място.</p>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Всичко важно за вашето дете</span>
+        <h1>Спокойствие и яснота <br>за всеки родителски момент <span class="green-heart">♥</span></h1>
+        <p>Nesti е твоят помощник в грижата за бебето — събира хранене, сън, здраве, дневник, аптечка, „Багаж с Nesti“ и полезен отчет за лекар на едно сигурно и уютно място.</p>
 
-      <div class="store-row">
-        <button class="store-btn store-link" data-store="App Store"><span class="store-symbol"></span><span><small>Свали от</small><b>App Store</b></span></button>
-        <button class="store-btn store-link" data-store="Google Play"><span class="store-symbol play">▶</span><span><small>Предлага се в</small><b>Google Play</b></span></button>
+        <div class="store-row">
+          <button class="store-btn interactive store-link" data-store="appstore">
+            <span class="store-icon"></span>
+            <span><small>Свали от</small><b>App Store</b></span>
+          </button>
+          <button class="store-btn interactive store-link" data-store="googleplay">
+            <span class="store-icon play">▶</span>
+            <span><small>Предлага се в</small><b>Google Play</b></span>
+          </button>
+        </div>
+
+        <div class="hero-bullets">
+          <span>✓ Без реклами</span>
+          <span>✓ Данните са под твой контрол</span>
+          <span>✓ Работи ясно и без излишна сложност</span>
+        </div>
       </div>
 
-      <div class="hero-trust">
-        <span>✓ Без реклами</span><span>✓ Данните са под твой контрол</span><span>✓ Ясен и разбираем дизайн</span>
+      <div class="hero-visual">
+        <div class="hero-family-wrap">
+          <img class="hero-family" src="assets/generated/family-hero.png" alt="Родители, бебе и Nesti">
+        </div>
+        <div class="phone-card interactive" id="openHomePreview" role="button" tabindex="0" aria-label="Преглед на началния екран">
+          <img src="assets/references/locked-homepage.jpg" alt="Реалната начална страница на приложението Nesti">
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="hero-product">
-      <div class="product-glow"></div>
-      <img src="assets/references/locked-homepage.jpg" alt="Заключената начална страница на приложението Nesti">
-      <div class="hero-chip"><b>Това е Nesti</b><span>Актуалната заключена начална страница</span></div>
+  <section class="modules" id="features">
+    <div class="container modules-grid">
+      <article class="module-card interactive"><img src="assets/icons/development.svg" alt=""><b>Развитие</b></article>
+      <article class="module-card interactive"><img src="assets/icons/feeding.svg" alt=""><b>Хранене</b></article>
+      <article class="module-card interactive"><img src="assets/icons/sleep.svg" alt=""><b>Сън</b></article>
+      <article class="module-card interactive"><img src="assets/icons/health.svg" alt=""><b>Здраве</b></article>
+      <article class="module-card interactive"><img src="assets/icons/diary.svg" alt=""><b>Дневник</b></article>
+      <article class="module-card interactive"><img src="assets/icons/pharmacy.svg" alt=""><b>Аптечка</b></article>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="feature-strip" id="features">
-  <div class="container">
-    <div class="feature-strip-grid">
-      <article><img src="assets/icons/development.svg"><b>Развитие</b><span>Ключови моменти и растеж</span></article>
-      <article><img src="assets/icons/feeding.svg"><b>Хранене</b><span>Записи и история</span></article>
-      <article><img src="assets/icons/sleep.svg"><b>Сън</b><span>Рутина и тенденции</span></article>
-      <article><img src="assets/icons/health.svg"><b>Здраве</b><span>Температура и бележки</span></article>
-      <article><img src="assets/icons/diary.svg"><b>Дневник</b><span>Всичко важно на едно място</span></article>
-      <article><img src="assets/icons/pharmacy.svg"><b>Аптечка</b><span>Практична организация</span></article>
-    </div>
-  </div>
-</section>
-
-<section class="brand-showcase" id="app">
-  <div class="container showcase-grid">
-    <div class="showcase-copy">
-      <span class="eyebrow">Един дневник. Цялата картина.</span>
-      <h2>Приложение, което се усеща спокойно още от първото отваряне.</h2>
-      <p>Началната страница е изградена около шестте основни модула, отделната функция „Багаж с Nesti“, съвета за деня и бързия преглед „Днес с Георги“.</p>
-      <div class="showcase-points">
-        <article><img src="assets/icons/heart.svg" alt=""><div><b>Направено за истинското ежедневие</b><span>По-малко чудене, повече време за детето.</span></div></article>
-        <article><img src="assets/icons/diary.svg" alt=""><div><b>Виждаш важното с един поглед</b><span>Записите са подредени ясно, когато ти потрябват.</span></div></article>
-        <article><img src="assets/icons/health.svg" alt=""><div><b>Всичко е винаги с теб</b><span>Удобно на телефона — вкъщи, навън или при лекаря.</span></div></article>
-        <article><img src="assets/icons/development.svg" alt=""><div><b>Nesti расте заедно с детето</b><span>Едно спокойно място за малките моменти и голямата картина.</span></div></article>
+  <section class="app-overview">
+    <div class="container app-overview-grid">
+      <div class="app-copy">
+        <span class="eyebrow">Приложението в реален вид</span>
+        <h2>Истинската начална страница е в центъра.</h2>
+        <p>Тук няма измислени екрани. Показан е реалният заключен home screen на Nesti — с шестте основни карти, отделната карта „Багаж с Nesti“, „Съвет за днес“ и обобщението „Днес с Георги“.</p>
+        <div class="info-points">
+          <div><b>Ясно начало</b><span>Още при първото влизане се вижда всичко важно.</span></div>
+          <div><b>Отделна travel функция</b><span>„Багаж с Nesti“ стои ясно и видимо в приложението.</span></div>
+          <div><b>Практично всеки ден</b><span>По-малко чудене, повече спокойствие.</span></div>
+        </div>
+      </div>
+      <div class="app-shot-grid">
+        <div class="screen-card large interactive" id="openHomePreview2">
+          <div class="screen-head"><span>Начало</span><button>Виж</button></div>
+          <img src="assets/references/locked-homepage.jpg" alt="Началният екран на Nesti">
+        </div>
+        <div class="screen-card mini interactive" id="openPackingDemoFromScreen">
+          <div class="screen-head"><span>Багаж с Nesti</span><button>Отвори</button></div>
+          <div class="mini-feature">
+            <img src="assets/generated/packing-beach.png" alt="Багаж с Nesti">
+          </div>
+        </div>
       </div>
     </div>
-    <div class="showcase-visual">
-      <img src="assets/references/locked-homepage.jpg" alt="Реален заключен екран на Nesti">
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="packing" id="packing">
-  <div class="container packing-layout">
-    <div class="packing-copy">
-      <span class="eyebrow">Багаж с Nesti</span>
-      <h2>Подготви багажа според детето и пътуването.</h2>
-      <p>Избираш сценарий, Nesti използва възрастта на детето и подготвя практичен checklist. Основната функция е достъпна за всички, а Premium добавя AI персонализация.</p>
-
-      <div class="packing-scenarios">
-        <button class="scenario active" data-scenario="beach"><img src="assets/icons/beach.svg"><span>Море и плаж</span></button>
-        <button class="scenario" data-scenario="mountain"><img src="assets/icons/mountain.svg"><span>Планина</span></button>
-        <button class="scenario" data-scenario="travel"><img src="assets/icons/travel.svg"><span>Пътуване</span></button>
-        <button class="scenario" data-scenario="camping"><img src="assets/icons/camping.svg"><span>Къмпинг</span></button>
-      </div>
-
-      <div class="tier-summary">
-        <div><b>Free</b><span>Готов checklist, редакция, собствени артикули и 1 запазен списък.</span></div>
-        <div><b>Plus</b><span>Неограничени списъци, повторно използване, споделяне и синхронизация.</span></div>
-        <div><b>Premium</b><span>Nesti AI персонализация и предложения за пропуснати неща.</span></div>
-      </div>
-    </div>
-
-    <div class="packing-demo">
-      <div class="packing-demo-head">
-        <div><small id="scenarioLabel">Море и плаж</small><strong>Багаж за Георги</strong><span>5 месеца · 7 дни</span></div>
-        <div class="bag-badge">🧳</div>
-      </div>
-      <div class="progress"><span></span></div>
-      <small>12 от 34 готови</small>
-      <div class="check-group">
-        <h4>Памперси и хигиена</h4>
-        <label><input type="checkbox" checked> Памперси <em>52 бр.</em></label>
-        <label><input type="checkbox" checked> Мокри кърпички <em>2 пакета</em></label>
-        <label><input type="checkbox"> Крем за зоната на пелените</label>
-        <label><input type="checkbox"> Подложка за повиване</label>
-      </div>
-      <div class="check-group scenario-items">
-        <h4 id="scenarioCategory">Плаж</h4>
-        <label><input type="checkbox"> Плажна хавлия <em>2 бр.</em></label>
-        <label><input type="checkbox"> Сенник / плажна палатка</label>
-        <label><input type="checkbox"> UV облекло <em>2 бр.</em></label>
-      </div>
-      <button class="primary-btn" id="aiPersonalize">Персонализирай с Nesti AI · Premium</button>
-    </div>
-  </div>
-</section>
-
-<section class="doctor" id="doctor">
-  <div class="container doctor-grid">
-    <div class="doctor-copy">
-      <span class="eyebrow">Nesti Premium</span>
-      <h2>Отчет за лекар, който показва реалната картина.</h2>
-      <p>Това е заключеният оригинален дизайн на 4-страничния PDF отчет. Той събира данните за избрания период в структуриран вид, без да се представя като медицинска диагноза.</p>
-      <ul>
-        <li>1/4 Общ преглед — данни за детето, период, резюме и акценти</li>
-        <li>2/4 Хранене — обобщение, разпределение и тенденции</li>
-        <li>3/4 Сън и температура — показатели, графики и бележки</li>
-        <li>4/4 Пелени, лекарства и растеж — история и ключови показатели</li>
-      </ul>
-      <button class="secondary-btn" id="openReport">Отвори примерния отчет</button>
-    </div>
-    <div class="report-preview">
-      <img src="assets/references/locked-doctor-report.jpg" alt="Заключеният примерен PDF отчет на Nesti">
-    </div>
-  </div>
-</section>
-
-<section class="security">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Сигурност и доверие</span>
-      <h2>Данните са част от грижата.</h2>
-    </div>
-    <div class="security-grid">
-      <article><img src="assets/icons/lock.svg"><b>Защитени данни</b><span>Контролираш кой има достъп.</span></article>
-      <article><img src="assets/icons/cloud.svg"><b>Облак</b><span>Синхронизация в Plus и Premium.</span></article>
-      <article><img src="assets/icons/shield.svg"><b>Без реклами</b><span>Без рекламно таргетиране.</span></article>
-      <article><img src="assets/icons/heart.svg"><b>Създадено за родители</b><span>Ясно, спокойно и практично.</span></article>
-    </div>
-  </div>
-</section>
-
-<section class="pricing" id="pricing">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Планове</span>
-      <h2>Избери Nesti според начина, по който ще го използваш.</h2>
-    </div>
-    <div class="pricing-grid">
-      <article class="free">
-        <span class="plan">Free</span><div class="price">0 €</div>
-        <p>Пълноценен основен дневник за едно дете.</p>
-        <ul><li>Хранене, сън и пелени</li><li>Температура и лекарства</li><li>Растеж и здравен дневник</li><li>База знания</li><li>Багаж с Nesti — базови checklist-и</li></ul>
+  <section class="dual-cards">
+    <div class="container dual-grid">
+      <article class="feature-panel packing-panel" id="packing">
+        <div class="panel-copy">
+          <span class="eyebrow">Багаж с Nesti</span>
+          <h2>Подготви всичко необходимо за излети, пътувания и ежедневни приключения с бебето.</h2>
+          <ul>
+            <li>Създай персонализиран списък</li>
+            <li>Отбелязвай и следи лесно</li>
+            <li>Никога не забравяй важните неща</li>
+          </ul>
+          <button class="primary-btn interactive" id="openPackingDemo">Създай списък</button>
+        </div>
+        <div class="panel-visual">
+          <img src="assets/generated/packing-beach.png" alt="Nesti mascot и куфар на плаж">
+        </div>
       </article>
-      <article class="plus">
-        <span class="plan">Plus</span><div class="price">3,99 €<small>/месец</small></div>
-        <p>За семейство, синхронизация и по-удобна организация.</p>
-        <ul><li>Всичко от Free</li><li>Повече деца</li><li>Споделяне със семейството</li><li>Архивиране и синхронизация</li><li>Разширени анализи</li><li>Интелигентен календар</li><li>Багаж с Nesti — неограничени списъци</li></ul>
-      </article>
-      <article class="premium">
-        <span class="plan">Premium</span><div class="price">6,99 €<small>/месец</small></div>
-        <p>Пълното Nesti изживяване.</p>
-        <ul><li>Всичко от Plus</li><li>Попитай Nesti AI</li><li>PDF отчет за лекар</li><li>AI обобщение в отчета</li><li>Багаж с Nesti — AI персонализация</li></ul>
+
+      <article class="feature-panel doctor-panel" id="doctor">
+        <div class="panel-copy">
+          <div class="doctor-headline-row">
+            <div>
+              <span class="eyebrow">Отчет за бебето</span>
+              <h2>Ясна картина на всеки ден. Спокойствие за цялото семейство.</h2>
+            </div>
+            <span class="pages-badge">4 страници</span>
+          </div>
+          <p>Примерният PDF показва какво би съдържал отчетът за лекар — обзор, хранене, сън и температура, пелени, лекарства и растеж.</p>
+          <button class="primary-btn interactive" id="openReport">Експортирай в PDF</button>
+        </div>
+        <div class="panel-visual doctor-visual">
+          <img src="assets/references/locked-doctor-report.jpg" alt="Примерен отчет за бебето">
+        </div>
       </article>
     </div>
-    <p class="price-note">Цените са част от текущия тестов модел и могат да бъдат променени преди официалното пускане.</p>
-  </div>
-</section>
+  </section>
 
-<section class="family">
-  <div class="container family-card">
-    <div class="family-photo">
-      <img src="assets/references/family-photo.jpg" alt="Реалистично семейство с бебе">
-      <div class="family-brand">Nesti ♥</div>
-    </div>
-    <div>
-      <span class="eyebrow">За моментите, които имат значение</span>
-      <h2>Повече яснота. Повече спокойни моменти заедно.</h2>
-      <p>Nesti пази ежедневните детайли подредени, за да остане повече внимание за най-важното — времето заедно.</p>
-      <div class="stars">★★★★★</div>
-    </div>
-  </div>
-</section>
-
-<section class="download-cta">
-  <div class="container download-panel">
-    <div>
-      <span class="eyebrow">Nesti за iOS и Android</span>
-      <h2>Всичко важно за бебето. На едно място.</h2>
-      <p>Дневник, тенденции, семейна синхронизация, Багаж с Nesti и полезен отчет за лекар.</p>
-      <div class="store-row">
-        <button class="store-btn store-link light" data-store="App Store"><span class="store-symbol"></span><span><small>Свали от</small><b>App Store</b></span></button>
-        <button class="store-btn store-link light" data-store="Google Play"><span class="store-symbol play">▶</span><span><small>Предлага се в</small><b>Google Play</b></span></button>
+  <section class="testimonial" id="family">
+    <div class="container testimonial-grid">
+      <div class="testimonial-photo-wrap">
+        <img src="assets/generated/family-hero.png" alt="Щастливо семейство с бебе и Nesti mascot" class="testimonial-photo">
+      </div>
+      <div class="testimonial-copy">
+        <span class="eyebrow">Създадено с любов</span>
+        <h2>За спокойствието на всяко семейство.</h2>
+        <blockquote>„Nesti ни помага всеки ден — лесно следим хранене, сън и развитие. А отчетът за лекар ни дава увереност, че не пропускаме нищо важно.“</blockquote>
+        <div class="stars">★★★★★</div>
+        <p class="quote-author">Мария, мама на Георги</p>
       </div>
     </div>
-    <div class="download-brand-visual">
-      <img class="download-mascot" src="assets/illustrations/nesti-mascot.svg" alt="Nesti">
-      <div class="big-nesti-word">Nesti</div>
-      <p>До теб в малките моменти. Полезен, когато наистина ти трябва.</p>
+  </section>
+
+  <section class="trust-strip">
+    <div class="container trust-grid">
+      <article><img src="assets/icons/shield.svg" alt=""><b>Сигурно и поверително</b><span>Данните са само твои и са защитени по най-високи стандарти.</span></article>
+      <article><img src="assets/icons/heart.svg" alt=""><b>Успокоение и подкрепа</b><span>Nesti е до теб във всеки момент — с полезни съвети и напомняния.</span></article>
+      <article><img src="assets/icons/development.svg" alt=""><b>Ясни графики и тенденции</b><span>Проследявай напредъка лесно и вземай информирани решения.</span></article>
+      <article><img src="assets/icons/diary.svg" alt=""><b>Перфектно навсякъде</b><span>Работи на телефон, таблет и компютър — когато и където имаш нужда.</span></article>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="download-cta" id="download">
+    <div class="container download-panel">
+      <div class="download-copy">
+        <span class="eyebrow light">Всичко важно — на едно място</span>
+        <h2>Дай най-доброто на своето бебе. <br>Започни с Nesti днес!</h2>
+        <div class="store-row">
+          <button class="store-btn light interactive store-link" data-store="appstore"><span class="store-icon"></span><span><small>Свали от</small><b>App Store</b></span></button>
+          <button class="store-btn light interactive store-link" data-store="googleplay"><span class="store-icon play">▶</span><span><small>Предлага се в</small><b>Google Play</b></span></button>
+        </div>
+      </div>
+      <div class="download-visual">
+        <img src="assets/generated/packing-beach.png" alt="Nesti mascot с куфар">
+      </div>
+    </div>
+  </section>
 </main>
 
-<div class="modal-backdrop" id="aiModal" aria-hidden="true">
-  <div class="modal-card">
-    <button class="modal-close" data-close="aiModal">×</button>
-    <span class="eyebrow">Nesti AI · Premium</span>
-    <h3>Списъкът е персонализиран за Георги.</h3>
-    <p>Според възрастта, 7-дневния престой и избрания сценарий:</p>
-    <ul><li>Добавих 4 предложения за пропуснати артикули.</li><li>Коригирах памперсите от 48 на 52 бр.</li><li>Добавих резервен комплект дрехи.</li><li>Добавих артикули според избрания сценарий.</li></ul>
+<div class="modal-backdrop" id="packingModal" aria-hidden="true">
+  <div class="modal-card wide-modal">
+    <button class="modal-close interactive" data-close="packingModal">×</button>
+    <div class="modal-header">
+      <span class="eyebrow">Примерен списък</span>
+      <h3>Багаж за Георги · 5 месеца · 7 дни</h3>
+    </div>
+
+    <div class="scenario-tabs">
+      <button class="scenario-tab interactive active" data-scenario="beach">Море и плаж</button>
+      <button class="scenario-tab interactive" data-scenario="mountain">Планина</button>
+      <button class="scenario-tab interactive" data-scenario="travel">Пътуване</button>
+      <button class="scenario-tab interactive" data-scenario="camping">Къмпинг</button>
+    </div>
+
+    <div class="packing-modal-grid">
+      <div>
+        <div class="progress-row"><b id="scenarioTitle">Плажна подготовка</b><span>12 / 34 готови</span></div>
+        <div class="progress"><span id="progressFill"></span></div>
+        <div class="check-groups">
+          <div class="check-group">
+            <h4>Основни</h4>
+            <label><input type="checkbox" checked> Памперси <em>52 бр.</em></label>
+            <label><input type="checkbox" checked> Мокри кърпички <em>2 пакета</em></label>
+            <label><input type="checkbox"> Крем за подсичане</label>
+            <label><input type="checkbox"> Резервни дрехи <em>2 комплекта</em></label>
+          </div>
+          <div class="check-group" id="scenarioItems">
+            <h4>Плаж</h4>
+            <label><input type="checkbox"> Плажна хавлия <em>2 бр.</em></label>
+            <label><input type="checkbox"> Сенник / плажна палатка</label>
+            <label><input type="checkbox"> UV облекло <em>2 бр.</em></label>
+            <label><input type="checkbox"> Шапка</label>
+          </div>
+        </div>
+      </div>
+      <div class="packing-side-card">
+        <img src="assets/generated/packing-beach.png" alt="Nesti mascot и куфар" id="scenarioImage">
+        <div class="side-note">
+          <b>Nesti AI · Premium</b>
+          <p>При Premium Nesti може да персонализира количествата, да добавя пропуснати неща и да предложи резервни артикули според сценария.</p>
+          <button class="secondary-btn interactive" id="openAiHint">Персонализирай с Nesti AI</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="reportModal" aria-hidden="true">
+  <div class="modal-card report-modal-card">
+    <button class="modal-close interactive" data-close="reportModal">×</button>
+    <div class="modal-header">
+      <span class="eyebrow">Примерен PDF</span>
+      <h3>Отчет за бебето</h3>
+    </div>
+    <img src="assets/references/locked-doctor-report.jpg" alt="Примерен PDF отчет">
+  </div>
+</div>
+
+<div class="modal-backdrop" id="homeModal" aria-hidden="true">
+  <div class="modal-card report-modal-card">
+    <button class="modal-close interactive" data-close="homeModal">×</button>
+    <div class="modal-header">
+      <span class="eyebrow">Истински home screen</span>
+      <h3>Началната страница на Nesti</h3>
+    </div>
+    <img src="assets/references/locked-homepage.jpg" alt="Началният екран на приложението">
   </div>
 </div>
 
 <div class="modal-backdrop" id="storeModal" aria-hidden="true">
-  <div class="modal-card">
-    <button class="modal-close" data-close="storeModal">×</button>
+  <div class="modal-card small-modal">
+    <button class="modal-close interactive" data-close="storeModal">×</button>
     <span class="eyebrow">Nesti</span>
-    <h3 id="storeTitle">App Store</h3>
-    <p>Бутонът е готов за официалната store страница. Реалният линк ще бъде добавен след публикуването на приложението.</p>
+    <h3 id="storeTitle">Изтегли Nesti</h3>
+    <p id="storeBody">Тук ще бъде добавен реалният линк към store страницата при публикуване. Засега бутонът има демо поведение, за да се вижда, че е активен.</p>
   </div>
 </div>
 
-<div class="modal-backdrop report-modal" id="reportModal" aria-hidden="true">
-  <div class="modal-card report-modal-card">
-    <button class="modal-close" data-close="reportModal">×</button>
-    <img src="assets/references/locked-doctor-report.jpg" alt="Примерен PDF отчет на Nesti">
+<div class="modal-backdrop" id="aiModal" aria-hidden="true">
+  <div class="modal-card small-modal">
+    <button class="modal-close interactive" data-close="aiModal">×</button>
+    <span class="eyebrow">Nesti AI · Premium</span>
+    <h3>Какво прави AI персонализацията?</h3>
+    <ul class="plain-list">
+      <li>Съобразява списъка с възрастта на детето.</li>
+      <li>Променя количествата според дните и сценария.</li>
+      <li>Предлага пропуснати важни артикули.</li>
+      <li>Запазва готовия списък за повторна употреба.</li>
+    </ul>
   </div>
 </div>
 
-<footer>
+<footer class="site-footer">
   <div class="container footer-grid">
-    <div><div class="brand footer-brand"><img class="brand-mascot" src="assets/illustrations/nesti-mascot.svg" alt="Nesti"><span>Nesti</span></div><p>Твоят помощник в грижата за детето.</p></div>
-    <div><h4>Функции</h4><a href="#features">Дневник</a><a href="#packing">Багаж с Nesti</a><a href="#doctor">Отчет за лекар</a></div>
-    <div><h4>Поддръжка</h4><a href="support.html">Често задавани въпроси</a><a href="privacy.html">Поверителност</a><a href="terms.html">Условия</a></div>
-    <div><h4>Контакт</h4><a href="mailto:hello@nesti.app">hello@nesti.app</a></div>
+    <div>
+      <div class="brand footer-brand">
+        <img class="brand-logo-img" src="assets/generated/nesti-logo-header.png" alt="Nesti">
+      </div>
+      <p>Твоят помощник в грижата за детето.</p>
+    </div>
+    <div>
+      <h4>Навигация</h4>
+      <a href="#features">Функции</a>
+      <a href="#packing">Багаж с Nesti</a>
+      <a href="#doctor">Отчет за лекар</a>
+    </div>
+    <div>
+      <h4>Информация</h4>
+      <a href="privacy.html">Поверителност</a>
+      <a href="terms.html">Условия</a>
+      <a href="support.html">Поддръжка</a>
+    </div>
+    <div>
+      <h4>Контакт</h4>
+      <a href="mailto:hello@nesti.app">hello@nesti.app</a>
+    </div>
   </div>
   <div class="copy">© 2026 Nesti. Всички права запазени.</div>
 </footer>
