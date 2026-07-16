@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6eadb"/><stop offset="1" stop-color="#dff2e4"/></linearGradient><radialGradient id="skin"><stop stop-color="#f3cfb3"/><stop offset="1" stop-color="#d8a887"/></radialGradient></defs>
+<rect width="900" height="620" rx="48" fill="url(#bg)"/>
+<ellipse cx="450" cy="545" rx="340" ry="42" fill="#cbd8c8" opacity=".45"/>
+<!-- warm semi-realistic family portrait -->
+<circle cx="300" cy="220" r="88" fill="url(#skin)"/><path d="M212 210q20-115 105-91q68 18 72 105q-39-54-92-57q-49-3-85 43" fill="#4a3428"/>
+<circle cx="600" cy="220" r="88" fill="url(#skin)"/><path d="M512 210q20-115 105-91q68 18 72 105q-39-54-92-57q-49-3-85 43" fill="#4a3428"/>
+<circle cx="450" cy="330" r="70" fill="url(#skin)"/><path d="M385 321q13-86 72-72q52 12 60 78q-34-34-68-35q-36-1-64 29" fill="#7a5643"/>
+<path d="M205 500q18-180 110-205q75 55 135 78q-70 73-88 151z" fill="#eee8df"/><path d="M695 500q-18-180-110-205q-75 55-135 78q70 73 88 151z" fill="#e7dfd4"/>
+<path d="M360 520q18-130 90-145q72 15 90 145z" fill="#faf7f1"/>
+<path d="M290 325q70 85 160 100q90-15 160-100" fill="none" stroke="#d5a987" stroke-width="32" stroke-linecap="round"/>
+<!-- Nesti mascot -->
+<g transform="translate(700 330) scale(.52)"><ellipse cx="120" cy="242" rx="88" ry="22" fill="#bed8c4" opacity=".5"/><ellipse cx="120" cy="125" rx="83" ry="112" fill="#159447"/><ellipse cx="120" cy="139" rx="57" ry="76" fill="#fff"/><circle cx="94" cy="111" r="9" fill="#082719"/><circle cx="146" cy="111" r="9" fill="#082719"/><path d="M120 122l-15 11l15 10l15-10z" fill="#f4a623"/><ellipse cx="73" cy="236" rx="34" ry="15" fill="#f5a623"/><ellipse cx="167" cy="236" rx="34" ry="15" fill="#f5a623"/><path d="M50 82q-28 34-23 79" fill="none" stroke="#159447" stroke-width="24" stroke-linecap="round"/><path d="M190 82q28 34 23 79" fill="none" stroke="#159447" stroke-width="24" stroke-linecap="round"/></g>
+<circle cx="770" cy="110" r="18" fill="#64b96d"/><path d="M770 130c-50-34-58-58-38-72c15-10 30 0 38 14c8-14 23-24 38-14c20 14 12 38-38 72z" fill="#64b96d"/>
+</svg>
