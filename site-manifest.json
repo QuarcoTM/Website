@@ -1,5 +1,5 @@
 {
-  "version": "5-remake",
+  "version": "6.1",
   "locked_homepage_asset": "assets/references/locked-homepage.jpg",
   "locked_doctor_report_asset": "assets/references/locked-doctor-report.jpg",
   "fake_app_screens": false,
@@ -8,5 +8,11 @@
     "mobile",
     "tablet",
     "desktop"
-  ]
+  ],
+  "locked_home_reference": "assets/references/locked-homepage.jpg",
+  "development_periods_feature": {
+    "website_section": true,
+    "dynamic_home_card": "only_near_or_during_relevant_age_window",
+    "personal_rhythm_message": "only_when_records_support_it"
+  }
 }

@@ -149,3 +149,8 @@ document.querySelectorAll('.interactive').forEach(el => {
     el.classList.add('pulse');
   });
 });
+
+const developmentInfoButton = document.getElementById('openDevelopmentInfo');
+if (developmentInfoButton) {
+  developmentInfoButton.addEventListener('click', () => openModal('developmentModal'));
+}
