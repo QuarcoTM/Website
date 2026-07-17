@@ -30,3 +30,10 @@
 - Телефонният preview показва динамичната карта между шестте модула и „Багаж с Nesti“.
 - Картата е ясно описана като временна — появява се само около релевантен възрастов прозорец.
 - Оригиналният заключен Home остава референция извън тези периоди.
+
+
+## v6.3 fix
+- Restored the complete lower-section CSS that was accidentally omitted in v6.2.
+- Trust icons are back to 40x40px.
+- Footer, testimonial, download CTA, modals and responsive rules are restored.
+- The compact Development Periods section remains unchanged.
