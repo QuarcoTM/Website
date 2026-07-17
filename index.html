@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="description" content="Nesti — дневник за бебето, периоди на промяна в развитието, Багаж с Nesti и примерен отчет за лекар.">
+  <meta name="description" content="Nesti — дневник за бебето, Багаж с Nesti и примерен отчет за лекар.">
   <title>Nesti v6 — Спокойствие и яснота за всеки родителски момент</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -85,35 +85,39 @@
     </div>
   </section>
 
-  <section class="development-periods" id="development-periods">
-    <div class="container development-periods-grid">
-      <div class="development-periods-copy">
+
+  <section class="development-highlight" id="development-periods">
+    <div class="container development-highlight-grid">
+      <div class="development-highlight-copy">
         <span class="eyebrow">Ново в Развитие</span>
-        <h2>Периоди на промяна — когато Nesti знае кога да ти подскаже.</h2>
-        <p>Nesti следи възрастта на детето и показва динамична карта само когато то наближава или е в ориентировъчен период, в който при някои бебета са възможни промени в съня, апетита и поведението.</p>
-        <div class="development-benefits">
-          <div><b>Не стои постоянно на Home</b><span>Картата се появява само около съответния възрастов прозорец.</span></div>
-          <div><b>Следи индивидуалния ритъм</b><span>При достатъчно записи Nesti може да забележи промяна спрямо обичайното за конкретното дете.</span></div>
-          <div><b>Без фалшиво точни „кризи“</b><span>Показва ориентировъчен период и ясно напомня кога не бива всичко да се отдава на „скок“.</span></div>
+        <h2>Периоди на промяна — точно когато има смисъл.</h2>
+        <p>Nesti следи възрастта на детето и показва тази карта само когато то наближава или се намира в ориентировъчен период на промяна.</p>
+        <div class="development-highlight-points">
+          <div><span class="development-dot">✓</span><span><b>Не стои постоянно на Home.</b> Извън тези периоди началният екран остава в заключения си вид.</span></div>
+          <div><span class="development-dot">✓</span><span><b>Следи индивидуалния ритъм.</b> При достатъчно записи Nesti сравнява последните дни с обичайния ритъм на детето.</span></div>
+          <div><span class="development-dot">✓</span><span><b>Без фалшиво точни „кризи“.</b> Показва ориентировъчен прозорец и ясно отделя тревожните признаци.</span></div>
         </div>
       </div>
 
-      <div class="development-periods-demo" aria-label="Пример как изглежда динамичната карта за период на промяна">
-        <div class="mini-phone-context">
-          <div class="mini-home-top">
-            <img src="assets/references/locked-homepage.jpg" alt="Заключеният начален екран на Nesti" class="mini-home-shot">
+      <div class="development-phone" aria-label="Пример как динамичната карта се появява на началния екран">
+        <div class="development-phone-shell">
+          <div class="development-home-top">
+            <img src="assets/references/locked-homepage.jpg" alt="Заключеният начален екран на Nesti">
           </div>
-          <div class="period-card-demo">
-            <div class="period-card-topline">
-              <span class="period-pill">Възможен период на промяна</span>
-              <span class="period-time">появява се само когато е релевантно</span>
+          <div class="development-dynamic-card">
+            <div class="development-card-labels">
+              <span class="development-card-label">Възможен период на промяна</span>
+              <span class="development-card-time">наближава</span>
             </div>
-            <h3>Георги е във възраст, в която са възможни промени в съня и поведението.</h3>
-            <p>Nesti може да сравни последните записи с обичайния му ритъм и да ти подскаже какво да наблюдаваш.</p>
-            <button class="period-link interactive" type="button" id="openDevelopmentInfo">Виж какво може да се случва <span>›</span></button>
+            <strong>Георги навлиза във възраст, в която са възможни промени в съня, апетита и поведението.</strong>
+            <span>Nesti ще следи обичайния му ритъм и ще ти подскаже при промяна.</span>
+            <button type="button" class="development-card-link">Виж какво може да се случва <span>›</span></button>
           </div>
-          <p class="period-demo-note">Когато няма наближаващ или активен период, началният екран остава в оригиналния си заключен вид.</p>
+          <div class="development-home-bottom">
+            <img src="assets/references/locked-homepage.jpg" alt="Продължение на заключения начален екран на Nesti">
+          </div>
         </div>
+        <p class="development-phone-note">Картата се появява динамично. Извън релевантния възрастов прозорец Home остава непроменен.</p>
       </div>
     </div>
   </section>
@@ -222,22 +226,6 @@
     </div>
   </section>
 </main>
-
-<div class="modal-backdrop" id="developmentModal" aria-hidden="true">
-  <div class="modal-card small-modal">
-    <button class="modal-close interactive" data-close="developmentModal">×</button>
-    <div class="modal-header">
-      <span class="eyebrow">Периоди на промяна</span>
-      <h3>Подсказка в точния момент, а не постоянна тревога.</h3>
-    </div>
-    <p>Nesti показва тази карта само когато детето наближава или е в подходящ възрастов прозорец. При достатъчно записи може да добави и наблюдение за промяна спрямо индивидуалния ритъм на детето.</p>
-    <ul class="plain-list">
-      <li>Ориентировъчни периоди, не точни „магически седмици“.</li>
-      <li>Промени в сън, хранене и поведение се показват като възможни, не гарантирани.</li>
-      <li>Тревожните признаци не се обясняват автоматично със „скок“.</li>
-    </ul>
-  </div>
-</div>
 
 <div class="modal-backdrop" id="packingModal" aria-hidden="true">
   <div class="modal-card wide-modal">
